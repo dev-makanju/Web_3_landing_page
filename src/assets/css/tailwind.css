@@ -1,3 +1,28 @@
+/*****
+* IMPORT @ CUSTOM FONTS FOR DESIGN IMPLEMENTATION
+****/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500&family=Inria+Sans:wght@700&family=Poppins:wght@300&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-container {
+   background: radial-gradient(circle at 20% 40%, #580355, #000000, transparent 80%),
+   radial-gradient(circle at 80% 20%, #ef15e8, #000000 50%), 
+   radial-gradient(circle at 59% 93%, #580355, #000000 30%), 
+   radial-gradient(circle at 56% 94%, #580355, #000000 30%);
+   min-height: 100% ;
+   height: 100% ;
+   padding-bottom: 4rem ; 
+   background-repeat: no-repeat; 
+}
+
+.btn-large{
+   background: #ffff;
+   padding : 7px 20px;
+   border-radius: 17px;
+   color: #8c1088;
+   font-family: 'Anek Malayalam', sans-serif ;
+}

@@ -1,6 +1,6 @@
 /**
- * @mixin
- */
+* @mixin
+*/
 module.exports = {
   props: {
     /**

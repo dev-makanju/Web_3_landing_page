@@ -1,8 +1,7 @@
 <template>
    <button
-      :style=[] 
-      class=""
-      @click="onClick">
+      :class="['btn-large' , size ? 'btn-small' : '']"
+      @click="clickHandler">
       {{ name }}
    </button>
 </template>
@@ -34,23 +33,18 @@ export default {
        * @values small, normal , large
        */
       size: {
-         type: String,
-         default: 'normal',
+         type: Boolean,
+         default: false,
       },
       /**
        * get called when the user clicked the button
        */
-      onClick: {
+      clickHandler: {
          type: Function,
          default: e => {
             console.log('Button Clicked' , e.target)
          }
       }
-   }
-
+   },
 }
 </script>
-
-<style>
-
-</style>

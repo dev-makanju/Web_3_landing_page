@@ -24,22 +24,13 @@ module.exports = {
           md: '768px',
           lg: '1200px',    
         },
-        fontFamily: {
-          sans: ['Graphik', 'sans-serif'],
-          serif: ['Merriweather', 'serif'],
+        borderRadius: {
+          '2xl': '4px',
+          '4xl': '2rem',
         },
-        extend: {
-          spacing: {
-            '7xl': '28rem',
-            '7xl': '64rem',
-            '8xl': '96rem',
-            '9xl': '128rem',
-          },
-          borderRadius: {
-            '2xl': '4px',
-            '4xl': '2rem',
-          }
-        }    
+    },
+    fontFamily: {
+      sans: ['Anek Malayalam', 'sans-serif'],
     },
   },
   plugins: [],

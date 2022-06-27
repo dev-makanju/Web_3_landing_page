@@ -1,22 +1,19 @@
 <template>
-  <nav>
-     <Header />
-  </nav>
-  <router-view />
-  <Footer />
+  <div>
+    <!-- dynamic layout entry -->
+    <component :is="layout">
+      <router-view v-model:layout.sync="layout"/>
+    </component>
+  </div>
 </template>
 
 <script>
 
-import Header from '@/components/Navigations/Header.vue'
-import Footer from '@/components/Navigations/Footer.vue'
-
 export default {
   name: 'App',
-  components:{
-    Header,
-    Footer
-  }     
+  data: () => ({
+      layout: 'div'
+  })
 }
 
 </script>

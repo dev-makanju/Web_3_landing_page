@@ -1,5 +1,5 @@
 <template>
-   <header class="bg-s-purple p-4">
+   <header class=" p-4">
       <div class="w-[80%] m-auto flex flex-row justify-between">
          <BaseLogo/>
          <ul class="flex flex-row">
@@ -9,7 +9,10 @@
             <li class="p-4 text-white">Faq</li>
          </ul>
          <div>
-            <BaseButton/>
+            <BaseButton
+               :name="'Connect Wallet'"
+               :color="'#580355'"
+            />
          </div>
       </div>
    </header>
