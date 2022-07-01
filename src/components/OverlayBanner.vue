@@ -9,9 +9,15 @@
          <div class="m-auto w-[500px] text-center">
             <h1 class="text-5xl text-white font-bold">The easiest way to exhnge cryptocurrency</h1>
             <p class="text-white p-[.8rem]">Trade, earn, and win crypto on the most popular decentralised platform in the galaxy</p>
-            <div>
-               <Button />
-               <Button />
+            <div class="flex gap-3 items-center justify-center">
+               <Button 
+                  :name="'Connect Wallet'"
+                  :size="size"
+               />
+               <Button 
+                  :name="'Exchange now'"
+                  :size='true'
+               />
             </div>
          </div>
       </div>
@@ -26,6 +32,10 @@ export default {
    name: 'OverlayBanner',
    components:{
       Button
-   }
+   },
+   data: ()=> ({
+      size:true,
+   }),
+
 }
 </script>

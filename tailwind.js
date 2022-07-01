@@ -10,6 +10,8 @@ module.exports = {
           'p-purple': '#fff',
           's-purple': '#580355',
           't-purple': '#000',
+          'background': 'rgba(0, 0, 0, 0.572)',
+          'white-background': 'rgba(255, 255, 255, 0.631)',
         },
         spacing: {
           '1': '8px',

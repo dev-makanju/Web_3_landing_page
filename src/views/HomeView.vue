@@ -3,9 +3,7 @@
       <!--overlay banner-->
       <OverlayBanner/>
       <!--overlay banner-->
-      <div>
-
-      </div>
+      <Exchange/>
       <!--test banner component-->
       <div>
         
@@ -22,6 +20,7 @@
 import HelloWorld from "@/components/Accordion.vue";
 import OverlayBanner from "@/components/OverlayBanner.vue"
 import AppLayout from '@/layouts/AppLayout.vue'
+import Exchange from '@/components/Exchange.vue'
 
 export default {
   name: "HomeView",
@@ -29,6 +28,7 @@ export default {
     HelloWorld,
     OverlayBanner,
     AppLayout,
+    Exchange
   },
 };
 </script>
