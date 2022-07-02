@@ -9,9 +9,7 @@
         
       </div>
       <!--Accordion-->
-      <div>
-
-      </div>
+      <Accordion/>
   </AppLayout>
 </template>
 
@@ -21,6 +19,7 @@ import HelloWorld from "@/components/Accordion.vue";
 import OverlayBanner from "@/components/OverlayBanner.vue"
 import AppLayout from '@/layouts/AppLayout.vue'
 import Exchange from '@/components/Exchange.vue'
+import Accordion from '@/components/Accordion.vue'
 
 export default {
   name: "HomeView",
@@ -28,7 +27,8 @@ export default {
     HelloWorld,
     OverlayBanner,
     AppLayout,
-    Exchange
+    Exchange,
+    Accordion
   },
 };
 </script>

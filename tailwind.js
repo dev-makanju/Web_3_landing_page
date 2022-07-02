@@ -12,6 +12,10 @@ module.exports = {
           't-purple': '#000',
           'background': 'rgba(0, 0, 0, 0.572)',
           'white-background': 'rgba(255, 255, 255, 0.631)',
+          'smoke': '0px 2px 5px rgba(0 , 0 , 0 , .1)',
+        },
+        boxShadow: {
+          'shad-main': '0px 2px 5px 17px rgba(241, 227, 227, 0.3)',
         },
         spacing: {
           '1': '8px',

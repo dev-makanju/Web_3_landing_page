@@ -3,7 +3,6 @@
 ****/
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500&family=Inria+Sans:wght@700&family=Poppins:wght@300&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +17,11 @@
    background-repeat: no-repeat; 
 }
 
+.accordion {
+   background: radial-gradient(circle at 0% 20%, #580355, #000000, transparent 100%);
+}
+
+
 .btn-large{
    background: #ffff;
    padding : 7px 20px;
@@ -26,10 +30,10 @@
    outline: none;
    font-family: 'Anek Malayalam', sans-serif ;
    letter-spacing: 1px;
-   transition-duration: .4s;
-   overflow: hidden;
-   position: relative;
-   box-shadow: 0 5px 15px #193047;
+   transition-duration: .4s ;
+   overflow: hidden ;
+   position: relative ;
+   box-shadow: 0 5px 15px #193047 ;
 }
 
 .btn-large:hover {
