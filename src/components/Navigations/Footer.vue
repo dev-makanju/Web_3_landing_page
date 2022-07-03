@@ -1,6 +1,6 @@
 <template>
    <div class="bg-[#100F0F] h-[300px]">
-      <div class=" text-center flex justify-center items-center gap-5">
+      <div class=" text-center flex justify-center items-center gap-5 relative">
          <div class="w-[400px]">
             <div class="flex items-center justify-center">
                 <BaseLogo/>
@@ -22,6 +22,7 @@
                   </li>
                </ul>
             </nav>
+            <button class="block md:hidden bg-[white] rounded-full text- p-2 shadow-shad-main absolute top-[-10%] right-4">||</button>
          <span>
             <h3 class="text-white">
                The easiest way to exhnge cryptocurrency, Trade, earn, and win crypto on the most popular and decentralised platform  on the galaxy. 
@@ -47,7 +48,7 @@
             </ul>
          </div>
          </div>
-         <div>
+         <div class="hidden md:block">
             <button class="bg-[white] rounded-full text- p-2 shadow-shad-main">Back to Top</button>
          </div>
       </div>

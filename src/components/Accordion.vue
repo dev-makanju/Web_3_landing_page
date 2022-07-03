@@ -2,57 +2,14 @@
   <div class="flex justify-center items-center p-4 flex-col">
       <h1 class="text-white text-xl text-center pt-6 pb-6">Frequently Asked Questions</h1>
       <div class="accordion rounded-2xl md:w-[700px] shadow-smoke p-4">
-        <div class="border-b-2 border-b-[#fff] overflow-hidden">
+        <div class="border-b-2 border-b-[#fff] overflow-hidden" v-for="(faq , index) in questions" :key="index">
           <div class="flex justify-between p-3">
-              <h2 class="text-white text-[20px]">What is Echnge</h2>
-              <div @click.prevent="accordionHandler" class="text-white text-[20px] cursor-pointer">D</div>
+              <h2 class="text-white text-[20px]">{{ faq.quest }}</h2>
+              <div @click.prevent="accordionHandler(index)" :class="['duration-500 text-white text-[20px] cursor-pointer', faq.select ? 'rotate-[180deg]' : '']">D</div>
           </div>
-          <div :class="['h-0 duration-500',isCliked ? 'p-3 h-[auto]' : '']" id="content">
-             <!-- content -->
-              <p class="text-white text-[14px] tracking-wide">If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. 
-                It’s important to look at factors such as supported as-sets, fees, payment methods, and security.
-              </p>
-          </div>
-        </div>
-        
-        <div class="border-b-2 border-b-[#fff] overflow-hidden">
-          <div class="flex justify-between p-3">
-              <h2 class="text-white text-[20px]">What is Exhnge Protocol?</h2>
-              <span @click.prevent="accordionHandler" 
-                    class="text-white text-[20px] cursor-pointer"
-              >D</span>
-          </div>
-          <div :class="['h-0 duration-500',isCliked ? 'p-3 h-[auto]' : '']" id="content">
-             <!-- content -->
-              <p class="text-white text-[14px] tracking-wide">If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. 
-                It’s important to look at factors such as supported as-sets, fees, payment methods, and security.
-              </p>
-          </div>
-        </div>
-
-        <div class="border-b-2 border-b-[#fff] overflow-hidden">
-          <div class="flex justify-between p-2">
-              <h2 class="text-white text-[20px]">What is gas fee?</h2>
-              <span @click.prevent="accordionHandler" class="text-white text-[20px]">D</span>
-          </div>
-          <div :class="['h-0 duration-500',isCliked ? 'p-3 h-[auto]' : '']" id="content">
-             <!-- content -->
-              <p class="text-white text-[14px] tracking-wide">If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. 
-                It’s important to look at factors such as supported as-sets, fees, payment methods, and security.
-              </p>
-          </div>
-        </div>
-
-        <div class="border-b-2 border-b-[#fff] overflow-hidden">
-          <div class="flex justify-between p-2">
-              <h2 class="text-white text-[20px]">What is Exhnge Token?</h2>
-              <span @click.prevent="accordionHandler" class="text-white text-[20px]">D</span>
-          </div>
-          <div :class="['h-0 duration-500',isCliked ? 'p-3 h-[auto]' : '']" id="content">
-             <!-- content -->
-              <p class="text-white text-[14px] tracking-wide">If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. 
-                It’s important to look at factors such as supported as-sets, fees, payment methods, and security.
-              </p>
+          <div :class="['h-0 duration-500',  faq.select ? 'pb-3 h-[150px]' : '']" id="content">
+              <!-- content -->
+              <p class="text-white text-[14px] tracking-wide p-3">{{ faq.answ }}</p>
           </div>
         </div>
       </div>
@@ -98,14 +55,40 @@
 export default {
   name:'Accordion',
   data(){
-    return{
-      isCliked: null,
+    return {
+      selectId: null,
+      questions:[
+        {
+          select: null,
+          quest: 'What is Echnge',
+          answ: 'If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. It’s important to look at factors such as supported as-sets, fees, payment methods, and security.'
+        },
+        {
+          select: null,
+          quest: 'What is Exhnge Protocol?',
+          answ: 'If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. It’s important to look at factors such as supported as-sets, fees, payment methods, and security.'
+        },
+        {
+          select: null,
+          quest: 'What is gas fee?',
+          answ: 'If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. It’s important to look at factors such as supported as-sets, fees, payment methods, and security.'
+        },
+        {
+          select: null,
+          quest: 'What is Exhnge Token?',
+          answ: 'If you want to buy or sell cryptocurrencies, opening an account with a crypto-currency exchange is a great way to start. Crypto exchan-ges function similarly to online brokerage platforms, providing you with the tools you need to buy and sell digital currencies and tokens like Bitcoin, Ethereum, and Dogecoin. It’s important to look at factors such as supported as-sets, fees, payment methods, and security.'
+        }
+      ],
     }
   },
   methods: {
-    accordionHandler(){
-     // const accLenth = document.querySelector("#content")
-      console.log('hello')
+    accordionHandler(id){
+      this.selectId = id;
+      for( let que in this.questions){
+        if(id == que){
+          this.questions[que].select = !this.questions[que].select
+        }
+      }
     }
   }
 }
