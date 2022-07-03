@@ -7,7 +7,7 @@
               <h2 class="text-white text-[20px]">{{ faq.quest }}</h2>
               <div @click.prevent="accordionHandler(index)" :class="['duration-500 text-white text-[20px] cursor-pointer', faq.select ? 'rotate-[180deg]' : '']">D</div>
           </div>
-          <div :class="['h-0 duration-500',  faq.select ? 'pb-3 h-[150px]' : '']" id="content">
+          <div :class="['h-0 duration-500',  faq.select ? 'pb-3 h-[280px] md:h-[150px]' : '']" id="content">
               <!-- content -->
               <p class="text-white text-[14px] tracking-wide p-3">{{ faq.answ }}</p>
           </div>
