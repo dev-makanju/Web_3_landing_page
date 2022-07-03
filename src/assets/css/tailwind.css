@@ -8,10 +8,12 @@
 @tailwind utilities;
 
 .main-container {
-   background: radial-gradient(circle at 20% 40%, #580355, #000000, transparent 80%),
-   radial-gradient(circle at 80% 20%, #ef15e8, #000000 50%), 
+   background: radial-gradient(circle at 20% 40%, #580355, #000000, transparent 100%),
+   radial-gradient(circle at 60% 10%, #ef15e8, #000000 100%), 
+   radial-gradient(circle at 30% 20%, #ef15e8, #000000 100%), 
+   radial-gradient(circle at 2% 60%, #ef15e8, #000000 100%), 
    radial-gradient(circle at 59% 93%, #580355, #000000 30%), 
-   radial-gradient(circle at 56% 94%, #580355, #000000 30%);
+   radial-gradient(circle at 0% 64%, #580355, #000000 100%);
    min-height: 100% ;
    height: 100% ;
    background-repeat: no-repeat; 
@@ -19,6 +21,11 @@
 
 .accordion {
    background: radial-gradient(circle at 0% 20%, #580355, #000000, transparent 100%);
+}
+
+.main-banner{
+   background: radial-gradient(circle at 0% 20%, #580355, #000000, transparent 100%),
+               radial-gradient(circle at 100% 100%, #580355, #000000, transparent 100%);
 }
 
 
