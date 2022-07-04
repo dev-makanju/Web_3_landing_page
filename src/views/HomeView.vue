@@ -1,9 +1,9 @@
 <template>
   <AppLayout>
       <!--overlay banner-->
-      <OverlayBanner/>
+      <OverlayBanner />
       <!--overlay banner-->
-      <Exchange/>
+      <Exchange />
       <!--test banner component-->
       <Banner />
       <!-- main banner -->

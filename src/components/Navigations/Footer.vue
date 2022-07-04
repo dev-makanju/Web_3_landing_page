@@ -22,7 +22,11 @@
                   </li>
                </ul>
             </nav>
-            <button class="block md:hidden bg-[white] rounded-full text- p-2 shadow-shad-main absolute top-[-10%] right-4">||</button>
+            <button class="block md:hidden bg-[white] rounded-full text- p-2 shadow-shad-main absolute top-[-10%] right-4">
+               <a href="#top">
+                  <font-awesome-icon icon="arrow-up"/>
+               </a>
+            </button>
          <span>
             <h3 class="text-white">
                The easiest way to exhnge cryptocurrency, Trade, earn, and win crypto on the most popular and decentralised platform  on the galaxy. 
@@ -30,26 +34,30 @@
          </span>
          <div>
             <ul class="flex gap-4 items-center justify-center p-4">
-               <li class="bg-white h-[10px] w-[10px] rounded-2xl p-1">
-                  <font-awesome-icon icon="fa fa-apple"/>
+               <li class="h-[10px] w-[20px]">
+                  <img class="w-[120px]" src="@/assets/Images/discord.svg" onerror="this.style.display='none'">
                </li>
-               <li class="bg-white h-[10px] w-[10px] rounded-2xl p-1">
-                  <font-awesome-icon icon="fa fa-apple"/>
+               <li class="h-[10px] w-[20px]">
+                  <img class="w-[120px]" src="@/assets/Images/linkedin.svg" onerror="this.style.display='none'">
                </li>
-               <li class="bg-white h-[10px] w-[10px] rounded-2xl p-1">
-                  <font-awesome-icon icon="fa fa-apple"/>
+               <li class="h-[10px] w-[20px]">
+                  <img class="w-[120px]" src="@/assets/Images/twitter.svg" onerror="this.style.display='none'">
                </li>
-               <li class="bg-white h-[10px] w-[10px] rounded-2xl p-1">
-                  <font-awesome-icon icon="fa fa-apple"/>
+               <li class="h-[10px] w-[10px]">
+                  <img class="w-[120px]" src="@/assets/Images/facebook.svg" onerror="this.style.display='none'">
                </li>
-               <li class="bg-white h-[10px] w-[10px] rounded-2xl p-1">
-                  <font-awesome-icon icon="fa fa-apple"/>
+               <li class="h-[10px] w-[20px]">
+                  <img class="w-[200px]" src="@/assets/Images/Reddit.svg" onerror="this.style.display='none'">
                </li>
             </ul>
          </div>
          </div>
          <div class="hidden md:block">
-            <button class="bg-[white] rounded-full text- p-2 shadow-shad-main">Back to Top</button>
+            <button class="bg-[white] rounded-full text- p-2 shadow-shad-main">
+               <a href="#top">
+                  Back to Top
+               </a>
+            </button>
          </div>
       </div>
    </div>

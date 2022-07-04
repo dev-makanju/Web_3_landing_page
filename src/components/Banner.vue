@@ -2,7 +2,7 @@
    <div class="">
       <div class="flex justify-between w-[95%] flex-col items-center md:flex-row sm:w-[90%] md:w-[80%] m-auto g-5 mt-3mb-3">
          <div class="flex-1 sm:h-[400px] md:h-[350px]">
-            <img class="animate sm:h-[400px] md:h-[350px]" src="../assets/Images/Spirals.svg"  onerror="display:none">
+            <img class="animate sm:h-[400px] md:h-[350px]" src="../assets/Images/Spirals.svg"  onerror="this.style.display='none'">
          </div>
          <div class="flex-1 basis-80%">
             <h2 class="text-white font-bold text-3xl pt-2 pb-2">Decentralized Exchange</h2>
@@ -14,7 +14,7 @@
       </div>
       <div class="flex justify-between w-[95%] sm:w-[90%] flex-col items-center md:flex-row-reverse md:w-[80%] m-auto g-4 g-5 mt-3 mb-3">
          <div class="flex-1 md:flex md:justify-end sm:h-[400px] md:h-[350px]">
-            <img class="animate sm:h-[400px] md:h-[350px]" src="../assets/Images/Circle.svg" onerror="display:none">
+            <img class="animate sm:h-[400px] md:h-[350px]" src="../assets/Images/Circle.svg" onerror="this.style.display='none'">
          </div>
          <div class="flex-1  basis-80%">
             <h2 class="text-white font-bold text-3xl pt-2 pb-2">Homomorphic  Encryption  Blockchain</h2>
@@ -26,7 +26,7 @@
       </div>
       <div class="flex justify-between flex-col items-center md:flex-row w-[95%] sm:w-[90%] md:w-[80%] m-auto g-4 g-5 mt-3 mb-3">
          <div class="flex-1 sm:h-[400px] md:h-[350px]">
-            <img class="animate-fast sm:h-[400px] md:h-[350px]" src="../assets/Images/Connection.svg" onerror="display:none">
+            <img class="animate-fast sm:h-[400px] md:h-[350px]" src="../assets/Images/Connection.svg" onerror="this.style.display='none'">
          </div>
          <div class="flex-1  basis-80%">
             <h2 class="text-white font-bold text-3xl pt-2 pb-2">Secure  and  Private  Smart  Contracts</h2>

@@ -24,7 +24,9 @@
                :name="'Connect Wallet'"
                :color="'#580355'"
             />
-            <span @click="toggleNavHandler" class="text-white text-3xl p-4 md:hidden">D</span>
+            <span @click="toggleNavHandler" class="text-white text-3xl p-4 md:hidden">
+               <font-awesome-icon icon="bars"/>
+            </span>
          </div>
       </div>
       <!-- mobile header -->
@@ -34,8 +36,12 @@
             <ul class="flex flex-col">
                <li class="p-4 font-bold cursor-pointer text-white">Home</li>
                <li class="p-4 font-bold cursor-pointer text-white">Exchange</li>
-               <li class="p-4 font-bold cursor-pointer text-white">About</li>
-               <li class="p-4 font-bold cursor-pointer text-white">Faq</li>
+               <li @click="scrollHandler" class="p-4 font-bold cursor-pointer text-white">
+                   <a href="#about">About</a>
+               </li>
+               <li @click="scrollHandler" class="p-4 font-bold cursor-pointer text-white">
+                   <a href="#faq">Faq</a>
+               </li>
             </ul>
          </nav>
       </div>
@@ -62,6 +68,9 @@ export default {
       toggleNavHandler() {
          this.isNavActive = true
          document.querySelector("body").style.overflow = 'hidden'
+      },
+      scrollHandler() {
+         this.closeHandler()
       }
    }
 }

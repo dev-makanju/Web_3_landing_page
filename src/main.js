@@ -6,14 +6,18 @@ import "@/assets/css/tailwind.css";
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { faAppleAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import observer from './directives/scrollAnimate'
 
 
 /* add icons to the library */
-library.add(faUserSecret , faAppleAlt , )
-
+library.add(faCircleCheck)
+library.add(faBars)
+library.add(faAngleDown)
+library.add(faArrowUp)
 
 createApp(App)
       .component('font-awesome-icon', FontAwesomeIcon)
