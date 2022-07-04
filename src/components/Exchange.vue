@@ -1,6 +1,6 @@
 <template>
   <div class="flex item-center w-full justify-center relative">
-      <img class="absolute mt-0 right-0 rotate-y180 h-[80vh] bg-gradient" src="../assets/Images/Waves2.svg" alt="">
+      <img class="absolute mt-0 right-0 rotate-y-180 h-[80vh] bg-gradient" src="../assets/Images/Waves2.svg" alt="">
       <ExhWrapper>
          <div class="flex flex-col items-center justify-center">
             <img class="p-4 w-[120px]"  src="@/assets/Images/plogo.svg" alt="">

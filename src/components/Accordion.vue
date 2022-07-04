@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center p-4 flex-col">
+  <div class="flex justify-center items-center p-4 flex-col" id="faq">
       <h1 class="text-white text-xl text-center pt-6 pb-6">Frequently Asked Questions</h1>
       <div class="accordion rounded-2xl md:w-[700px] shadow-smoke p-4">
         <div class="border-b-2 border-b-[#fff] overflow-hidden" v-for="(faq , index) in questions" :key="index">

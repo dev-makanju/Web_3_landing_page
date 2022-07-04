@@ -4,10 +4,18 @@
          <BaseLogo/>
          <nav class="hidden md:block">
             <ul class="flex flex-row">
-               <li class="p-4 cursor-pointer text-white">Home</li>
-               <li class="p-4 cursor-pointer text-white">Exchange</li>
-               <li class="p-4 cursor-pointer text-white">About</li>
-               <li class="p-4 cursor-pointer text-white">Faq</li>
+               <li class="p-4 cursor-pointer text-white">
+                 <a href="/">Home</a>
+               </li>
+               <li class="p-4 cursor-pointer text-white">
+                  <a href="/">Exchange</a>
+               </li>
+               <li class="p-4 cursor-pointer text-white">
+                  <a href="#about">About</a>
+               </li>
+               <li class="p-4 cursor-pointer text-white">
+                  <a href="#faq">Faq</a>
+               </li>
             </ul>
          </nav>
          <div>
@@ -20,7 +28,7 @@
          </div>
       </div>
       <!-- mobile header -->
-      <div :class="['off md:hidden backdrop-blur-md absolute w-full h-[calc(100vh+14px)] bg-background top-0 right-0 z-10 flex justify-start items-center text-center font-bold text-3xl duration-500', isNavActive ? 'translate-x-0':'translate-x-[-768px]']">
+      <div :class="['off md:hidden backdrop-blur-md absolute w-full h-[calc(100vh+14px)] bg-background top-0 right-0 z-10 flex justify-start items-center font-bold text-3xl duration-500', isNavActive ? 'translate-x-0':'translate-x-[-768px]']">
          <div @click="closeHandler" class="absolute right-0 top-0 p-4 cursor-pointer text-white">X</div>
          <nav>
             <ul class="flex flex-col">

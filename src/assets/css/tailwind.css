@@ -7,6 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+   scroll-behavior: smooth;
+}
+
 .main-container {
    background: radial-gradient(circle at 20% 40%, #580355, #000000, transparent 100%),
    radial-gradient(circle at 60% 10%, #ef15e8, #000000 100%), 
@@ -16,7 +20,8 @@
    radial-gradient(circle at 0% 64%, #580355, #000000 100%);
    min-height: 100% ;
    height: 100% ;
-   background-repeat: no-repeat; 
+   background-repeat: no-repeat;
+   overflow-x: hidden; 
 }
 
 .accordion {

@@ -8,10 +8,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faAppleAlt } from '@fortawesome/free-solid-svg-icons'
+import observer from './directives/scrollAnimate'
 
 
 /* add icons to the library */
 library.add(faUserSecret , faAppleAlt , )
 
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount("#app");
+createApp(App)
+      .component('font-awesome-icon', FontAwesomeIcon)
+      .directive('scrollAble' , observer)
+      .use(router).mount("#app");
