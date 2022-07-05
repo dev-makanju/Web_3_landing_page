@@ -1,11 +1,11 @@
 <template>
-  <div class="flex justify-center items-center p-4 flex-col" id="faq">
-      <h1 class="text-white text-xl text-center pt-6 pb-6">Frequently Asked Questions</h1>
-      <div class="accordion rounded-2xl md:w-[700px] shadow-smoke p-4">
+  <div class="flex justify-center items-center p-2 flex-col" id="faq">
+      <h1 class="text-white text-xl text-center pt-6 pb-4">Frequently Asked Questions</h1>
+      <div class="accordion rounded-2xl md:w-[700px] shadow-smoke p-2 md:p-4 mt-4">
         <div class="border-b-2 border-b-[#fff] overflow-hidden" v-for="(faq , index) in questions" :key="index">
           <div class="flex justify-between p-3">
-              <h2 class="text-white text-[20px]">{{ faq.quest }}</h2>
-              <div @click.prevent="accordionHandler(index)" :class="['duration-500 text-white text-[20px] cursor-pointer', faq.select ? 'rotate-[180deg]' : '']">
+              <h2 class="text-white text-[14px] md:text-[16px]">{{ faq.quest }}</h2>
+              <div @click.prevent="accordionHandler(index)" :class="['duration-500 text-white text-[14px] md:text-[20px] cursor-pointer', faq.select ? 'rotate-[180deg]' : '']">
                 <font-awesome-icon icon="angle-down"/>
               </div>
           </div>
@@ -15,10 +15,10 @@
           </div>
         </div>
       </div>
-      <div class="p-5">
-          <h1 class="text-white text-xl text-center">Our Patners</h1>
-          <ul class="flex flex-wrap gap-[2rem] items-center justify-center p-4">
-               <li class="w-[12px]">
+      <div class="p-1 md:p-5 mb-4 mt-4">
+          <h1 class="text-white text-xl text-center mt-4 mb-4 font-bold tracking-[1px]">Our Patners</h1>
+          <ul class="flex flex-wrap gap-[4rem] items-center justify-start p-2">
+               <li class="w-[7px]">
                   <span>
                     <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.878906 28.1819L0.878909 9.39404L10.2728 14.6129V23.0152L17.788 27.2425L25.3031 23.0152V14.6129L34.6971 9.39404V28.1819L17.788 37.5758L0.878906 28.1819Z" fill="#192657"/>
@@ -68,21 +68,6 @@
                   <path d="M24.5 35.25C24.5 29.0368 29.5368 24 35.75 24H47V35.25C47 41.4632 41.9632 46.5 35.75 46.5C29.5368 46.5 24.5 41.4632 24.5 35.25Z" fill="#17CF97"/>
                   <path d="M2 35.25C2 41.4632 7.03679 46.5 13.25 46.5H24.5V35.25C24.5 29.0368 19.4632 24 13.25 24C7.03679 24 2 29.0368 2 35.25Z" fill="#17CF97"/>
                   <path d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z" fill="#17CF97"/>
-                  </svg>
-               </li>
-               <li class="w-[12px]">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M27.5308 40.1396C27.5757 35.5503 26.4122 31.8183 24.9322 31.8038C23.4521 31.7894 22.2159 35.498 22.1711 40.0872C22.1262 44.6765 23.2897 48.4086 24.7697 48.423C26.2498 48.4375 27.486 44.7289 27.5308 40.1396Z" fill="white"/>
-                  <path d="M18.947 39.0973C21.4661 35.2609 22.5052 31.4923 21.268 30.6799C20.0307 29.8675 16.9856 32.3189 14.4666 36.1553C11.9475 39.9917 10.9084 43.7602 12.1456 44.5727C13.3829 45.3851 16.4279 42.9337 18.947 39.0973Z" fill="white"/>
-                  <path d="M12.2792 33.5928C16.4726 31.7276 19.3843 29.1192 18.7827 27.7668C18.1812 26.4144 14.2942 26.8302 10.1008 28.6955C5.90744 30.5607 2.99571 33.1691 3.59726 34.5215C4.1988 35.8739 8.08584 35.4581 12.2792 33.5928Z" fill="white"/>
-                  <path d="M18.2793 23.9743C18.5045 22.5114 15.0098 20.7595 10.4738 20.0613C5.93773 19.3631 2.07799 19.9831 1.85283 21.446C1.62767 22.9089 5.12235 24.6607 9.65843 25.3589C14.1944 26.0571 18.0542 25.4371 18.2793 23.9743Z" fill="white"/>
-                  <path d="M19.908 20.4897C20.8882 19.3807 18.895 16.0178 15.4561 12.9785C12.0172 9.93919 8.43479 8.37443 7.45461 9.48349C6.47443 10.5926 8.46763 13.9555 11.9066 16.9948C15.3455 20.0341 18.9279 21.5988 19.908 20.4897Z" fill="white"/>
-                  <path d="M23.1514 18.4526C24.5756 18.0496 24.7171 14.1429 23.4675 9.72682C22.2179 5.31073 20.0503 2.05749 18.6261 2.4605C17.2019 2.86351 17.0604 6.77015 18.31 11.1863C19.5596 15.6023 21.7272 18.8556 23.1514 18.4526Z" fill="white"/>
-                  <path d="M31.9583 11.3238C33.2948 6.93317 33.2304 3.02449 31.8144 2.59348C30.3984 2.16246 28.1671 5.37232 26.8306 9.76291C25.4942 14.1535 25.5586 18.0622 26.9746 18.4932C28.3906 18.9242 30.6219 15.7144 31.9583 11.3238Z" fill="white"/>
-                  <path d="M38.2514 17.2565C41.7491 14.285 43.8077 10.9617 42.8493 9.83369C41.891 8.70569 38.2787 10.2002 34.7811 13.1716C31.2834 16.1431 29.2249 19.4664 30.1832 20.5944C31.1415 21.7224 34.7538 20.228 38.2514 17.2565Z" fill="white"/>
-                  <path d="M40.3322 25.652C44.8812 25.0434 48.4097 23.3608 48.2134 21.8937C48.0172 20.4267 44.1704 19.7308 39.6214 20.3393C35.0725 20.9479 31.5439 22.6305 31.7402 24.0976C31.9365 25.5646 35.7832 26.2606 40.3322 25.652Z" fill="white"/>
-                  <path d="M46.2004 34.9408C46.8285 33.6006 43.9688 30.9353 39.813 28.9877C35.6573 27.0401 31.7792 26.5478 31.1511 27.888C30.523 29.2283 33.3827 31.8936 37.5385 33.8412C41.6942 35.7887 45.5723 36.2811 46.2004 34.9408Z" fill="white"/>
-                  <path d="M37.4589 44.8297C38.7119 44.0419 37.7473 40.2535 35.3044 36.3682C32.8615 32.4829 29.8653 29.972 28.6123 30.7598C27.3593 31.5476 28.3239 35.336 30.7668 39.2213C33.2097 43.1066 36.2059 45.6176 37.4589 44.8297Z" fill="white"/>
                   </svg>
                </li>
                <li class="w-[12px]">

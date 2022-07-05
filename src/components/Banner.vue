@@ -1,5 +1,5 @@
 <template>
-   <div class="">
+   <div class="mb-12 mt-12">
       <div class="flex justify-between w-[95%] flex-col items-center md:flex-row sm:w-[90%] md:w-[80%] m-auto g-5 mt-3mb-3">
          <div class="flex-1 sm:h-[400px] md:h-[350px]">
             <img class="animate sm:h-[400px] md:h-[350px]" src="../assets/Images/Spirals.svg"  onerror="this.style.display='none'">
