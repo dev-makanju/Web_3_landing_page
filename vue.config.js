@@ -12,12 +12,5 @@ module.exports = defineConfig({
       maskIcon: '@/assets/Icons/safari-pinned-tab.svg',
       msTileImage: '@/assets/Icons/msapplication-icon-144x144.png'
     },
-    // configure the workbox plugin
-    workboxPluginMode: 'InjectManifest',
-    workboxOptions:{
-      //swSrc is required in injectManifest mode.
-      swSrc:'src/service-worker.js',
-      //...other workbox options
-     }
   },
 });
