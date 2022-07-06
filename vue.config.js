@@ -16,7 +16,7 @@ module.exports = defineConfig({
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swSrc: 'dev/sw.js',
+      swSrc: 'src/registerServiceWorker.js',
       // ...other Workbox options...
     }
   },
