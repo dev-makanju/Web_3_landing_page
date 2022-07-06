@@ -1,13 +1,13 @@
 <template>
   <AppLayout>
       <!--overlay banner-->
-      <OverlayBanner />
+      <OverlayBanner/>
       <!--overlay banner-->
-      <Exchange />
+      <Exchange/>
       <!--test banner component-->
-      <Banner />
+      <Banner/>
       <!-- main banner -->
-      <Mainbanner />
+      <Mainbanner/>
       <!--Accordion-->
       <Accordion/>
   </AppLayout>
