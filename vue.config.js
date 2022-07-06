@@ -5,6 +5,9 @@ module.exports = defineConfig({
   pwa: {
     name: 'Exhnge',
     themeColor: '#fff',
+    msTileColor: '#fff',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
     icons: {
       favicon32: '@/assets/Icons/favicon-32x32.png',
       favicon16: '@/assets/Icons/favicon-16x16.png',
