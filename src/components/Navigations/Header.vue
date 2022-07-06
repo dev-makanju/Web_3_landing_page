@@ -8,7 +8,7 @@
                  <a href="/">Home</a>
                </li>
                <li class="p-4 cursor-pointer text-white">
-                  <a href="/">Exchange</a>
+                  <a href="#exhnge">Exchange</a>
                </li>
                <li class="p-4 cursor-pointer text-white">
                   <a href="#about">About</a>
@@ -35,8 +35,10 @@
          <div @click="closeHandler" class="absolute right-0 top-0 p-4 cursor-pointer text-white">X</div>
          <nav>
             <ul class="flex flex-col">
-               <li class="p-4 font-bold cursor-pointer text-white">Home</li>
-               <li class="p-4 font-bold cursor-pointer text-white">Exchange</li>
+               <li @click="scrollHandler"  class="p-4 font-bold cursor-pointer text-white">Home</li>
+               <li @click="scrollHandler" class="p-4 font-bold cursor-pointer text-white">
+                  <a href="#exhnge">Exchange</a>
+               </li>
                <li @click="scrollHandler" class="p-4 font-bold cursor-pointer text-white">
                    <a href="#about">About</a>
                </li>

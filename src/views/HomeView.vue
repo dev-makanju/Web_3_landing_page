@@ -10,6 +10,7 @@
       <Mainbanner/>
       <!--Accordion-->
       <Accordion/>
+      <PWA/>
   </AppLayout>
 </template>
 
@@ -22,6 +23,7 @@ import Exchange from '@/components/Exchange.vue'
 import Accordion from '@/components/Accordion.vue'
 import Banner from '@/components/Banner.vue'
 import Mainbanner from '@/components/MainBanner.vue'
+import PWA from '@/components/Modals/InstallPwa.vue'
 
 export default {
   name: "HomeView",
@@ -33,6 +35,7 @@ export default {
     Accordion,
     Banner,
     Mainbanner,
+    PWA,
   },
 };
 </script>
