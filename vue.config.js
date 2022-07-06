@@ -14,10 +14,10 @@ module.exports = defineConfig({
     },
     // configure the workbox plugin
     workboxPluginMode: 'InjectManifest',
-    workboxOptions: {
-      // swSrc is required in InjectManifest mode.
-      swSrc:'./src/sw.js',
-      // ...other Workbox options...
-    }
+    workboxOptions:{
+      //swSrc is required in injectManifest mode.
+      swSrc:'src/service-worker.js',
+      //...other workbox options
+     }
   },
 });
