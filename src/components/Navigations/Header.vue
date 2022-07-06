@@ -23,6 +23,7 @@
                class="hidden sm:block"
                :name="'Connect Wallet'"
                :color="'#580355'"
+               @cliked="setStylehandler"
             />
             <span @click="toggleNavHandler" class="text-white text-3xl p-4 md:hidden">
                <font-awesome-icon icon="bars"/>
@@ -45,20 +46,30 @@
             </ul>
          </nav>
       </div>
+      <Overlay
+         :showModal="stylehandler"
+         :slideModal="slideInModal"
+         @close="closeModal"
+      />
    </header>
 </template>
 
 <script>
 import BaseLogo from '@/components/BaseComponent/BaseLogo.vue'
 import BaseButton from '@/components/BaseComponent/BaseButton.vue'
+import Overlay from '@/components/Modals/Overlay.vue'
+
 export default {
    name:'Header',
    components:{
       BaseLogo,
       BaseButton,
+      Overlay,
    },
    data: () => ({
       isNavActive: null,
+      stylehandler: null,
+      slideInModal: null
    }),
    methods: {
       closeHandler() {
@@ -71,7 +82,20 @@ export default {
       },
       scrollHandler() {
          this.closeHandler()
-      }
+      },
+      setStylehandler(){
+         this.stylehandler = true;
+         setTimeout( () => {
+            this.slideInModal = true;
+         }, 100)
+      },
+      closeModal(){
+         this.slideInModal = false;
+         setTimeout( () => {
+            this.stylehandler = false;
+         }, 200)
+      },
    }
 }
 </script>
+

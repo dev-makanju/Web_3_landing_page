@@ -1,5 +1,10 @@
 <template>
    <div class="first-line: h-[80vh] w-full">
+      <Overlay
+         :showModal="stylehandler"
+         :slideModal="slideInModal"
+         @close="closeModal"
+      />
       <div class="h-[80vh] w-full absolute mt-0">
          <div class="w-[400px] h-[400px]  rounded-full"></div>
          <div></div>
@@ -13,6 +18,7 @@
                <Button 
                   :name="'Connect Wallet'"
                   :size="size"
+                  @cliked="setStylehandler"
                />
                <Button 
                   :name="'Exchange now'"
@@ -27,15 +33,33 @@
 <script>
 
 import Button from '@/components/BaseComponent/BaseButton.vue'
+import Overlay from '@/components/Modals/Overlay.vue'
 
 export default {
    name: 'OverlayBanner',
    components:{
-      Button
+      Button,
+      Overlay
    },
    data: ()=> ({
       size:true,
-   }),
+      stylehandler: null,
+      slideInModal: null,
 
+   }),
+   methods:{
+      setStylehandler(){
+         this.stylehandler = true;
+         setTimeout( () => {
+            this.slideInModal = true;
+         }, 100)
+      },
+      closeModal(){
+         this.slideInModal = false;
+         setTimeout( () => {
+            this.stylehandler = false;
+         }, 200)
+      },
+   }
 }
 </script>

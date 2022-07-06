@@ -1,6 +1,6 @@
 <template>
    <AppWrapper>
-      <Header />
+      <Header/>
          <slot />
       <Footer />
    </AppWrapper>

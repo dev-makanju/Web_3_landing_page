@@ -39,12 +39,11 @@ export default {
       /**
        * get called when the user clicked the button
        */
-      clickHandler: {
-         type: Function,
-         default: e => {
-            console.log('Button Clicked' , e.target)
-         }
-      }
    },
+   methods: {
+      clickHandler() {
+         this.$emit('cliked')
+      }
+   }
 }
 </script>
