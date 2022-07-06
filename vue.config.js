@@ -8,12 +8,5 @@ module.exports = defineConfig({
     msTileColor: '#fff',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
-    icons: {
-      favicon32: '@/assets/Icons/favicon-32x32.png',
-      favicon16: '@/assets/Icons/favicon-16x16.png',
-      appleTouchIcon: '@/assets/Icons/apple-touch-icon-152x152.png',
-      maskIcon: '@/assets/Icons/safari-pinned-tab.svg',
-      msTileImage: '@/assets/Icons/msapplication-icon-144x144.png'
-    },
   },
 });
